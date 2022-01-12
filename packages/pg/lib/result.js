@@ -63,7 +63,7 @@ class Result {
     var row = {}
     for (var i = 0, len = rowData.length; i < len; i++) {
       var rawValue = rowData[i]
-      var field = this.fields[i].name
+      var field = this.fields[i].name.toUpperCase()
       if (rawValue !== null) {
         row[field] = this._parsers[i](rawValue)
       } else {
