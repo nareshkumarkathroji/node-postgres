@@ -11,14 +11,6 @@
     "postgresql",
     "rdbms"
   ],
-  "homepage": "https://github.com/brianc/node-postgres",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/brianc/node-postgres.git",
-    "directory": "packages/pg"
-  },
-  "author": "Brian Carlson <brian.m.carlson@gmail.com>",
-  "main": "./lib",
   "dependencies": {
     "buffer-writer": "2.0.0",
     "packet-reader": "1.0.0",
