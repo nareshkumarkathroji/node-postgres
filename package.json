@@ -4,8 +4,7 @@
   "description": "Node PGSQL Client",
   "main": "index.js",
   "scripts": {
-    "install:pg": "cd \"node_modules/pgDB/pg\" && npm install",
-    "postinstall": "npm run install:pg",
+    "postinstall": "cd \"node_modules/pgDB/pg\" && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
