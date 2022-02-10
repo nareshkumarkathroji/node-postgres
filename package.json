@@ -4,7 +4,7 @@
   "description": "Node PGSQL Client",
   "main": "index.js",
   "scripts": {
-    "postinstall": "for D in */; do cd D && npm install \"${D}\"; done",
+    "postinstall": "for D in */;  do echo \"Installing stuff on ${D}\" && npm install --cwd \"${D}\"; done",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
