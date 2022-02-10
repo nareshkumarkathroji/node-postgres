@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "install:pg": "cd node_modules/pgDB/pg && npm install",
-    "postinstall": "run-p install:*",
+    "postinstall": "npm run install:pg",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
