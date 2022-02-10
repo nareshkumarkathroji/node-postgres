@@ -4,7 +4,13 @@
   "description": "Node PGSQL Client",
   "main": "index.js",
   "scripts": {
-    "postinstall": "for D in */;  do echo \"Installing stuff on ${D}\" && npm install --cwd \"${D}\"; done",
+    "install:pg": "cd pg && npm install",
+    "install:pg-connection-string": "cd pg-connection-string && npm install",
+    "install:pg-cursor": "cd pg-cursor && npm install",
+    "install:pg-pool": "cd pg-pool && npm install",
+    "install:pg-protocol": "cd pg-protocol && npm install",
+    "install:pg-query-stream": "cd pg-query-stream && npm install",
+    "postinstall": "run-p install:*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
