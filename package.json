@@ -7,6 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "pg": "file:pg",
+    "pg-connection-string": "file:pg-connection-string",
+    "pg-cursor": "file:pg-cursor",
+    "pg-pool": "file:pg-pool",
+    "pg-protocol": "file:pg-protocol",
+    "pg-query-stream": "file:pg-query-stream"
   },
   "author": "",
   "license": "ISC"
