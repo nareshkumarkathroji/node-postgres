@@ -4,7 +4,7 @@
   "description": "Node PGSQL Client",
   "main": "index.js",
   "scripts": {
-    "install:all": "for D in */; do npm install --cwd \"${D}\"; done",
+    "postinstall": "(cd pg && npm install) && (cd pg-connection-string && npm install) && (cd pg-cursor && npm install) && (cd pg-pool && npm install) && (cd pg-protocol && npm install) && (cd pg-query-stream && npm install)",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
